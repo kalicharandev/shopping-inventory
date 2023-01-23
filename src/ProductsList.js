@@ -12,12 +12,16 @@ export default function productsList(){
  let productsList = "";
  for(let i = 0; i < Products.length; i++) {
  
- productsList += `<ul><li>${Products[i].name} price RS : ${Products[i].price}</li></ul>`
+ productsList += Products[i].name + ":" + Products[i].price
  
 }
 return(
 <div className='product-list'>
+  <ul>
+    <li>
     {productsList}
+    </li>
+    </ul>
 </div>
 
 )
