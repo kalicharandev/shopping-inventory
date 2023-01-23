@@ -1,7 +1,8 @@
 import './App.css';
-function ProductsList(){
+function ProductssList(){
+  let ProductsList = "";
 
-  const Products = [
+  const Products= [
    {category: "Fruits", price: "$1", stocked: true, name: "Apple"},
    {category: "Fruits", price: "$1", stocked: true, name: "Dragonfruit"},
    {category: "Fruits", price: "$2", stocked: false, name: "Passionfruit"},
@@ -9,23 +10,18 @@ function ProductsList(){
    {category: "Vegetables", price: "$4", stocked: false, name: "Pumpkin"},
    {category: "Vegetables", price: "$1", stocked: true, name: "Peas"}
  ];
- let productsList = "";
  for(let i = 0; i < Products.length; i++) {
  
- productsList += Products[i].name + ":" + Products[i].price
+ ProductsList += <li>Products[i].name  Products[i].price</li>
  
 }
 return(
-<div className='product-list'>
-  <ul>
-    <li>
-    {productsList}
-    </li>
-    </ul>
+<div className='Products-list'>
+    {ProductsList}
 </div>
 
 )
 
 }
 
-export default ProductsList;
+export default ProductssList;
