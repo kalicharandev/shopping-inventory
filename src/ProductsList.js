@@ -1,5 +1,5 @@
 import './App.css';
-export default function productsList(){
+function ProductsList(){
 
   const Products = [
    {category: "Fruits", price: "$1", stocked: true, name: "Apple"},
@@ -23,3 +23,5 @@ return(
 )
 
 }
+
+export default ProductsList;
